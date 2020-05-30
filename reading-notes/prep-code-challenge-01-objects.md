@@ -136,7 +136,25 @@ let o = {
   property(parameters) {},
 }
 ```
+# Spread properties
 
+The Rest/Spread Properties for ECMAScript proposal (stage 4) adds spread properties to object literals. It copies own enumerable properties from a provided object onto a new object.
+```
+let obj1 = { foo: 'bar', x: 42 }
+let obj2 = { foo: 'baz', y: 13 }
+
+let clonedObj = { ...obj1 }
+// Object { foo: "bar", x: 42 }
+
+let mergedObj = { ...obj1, ...obj2 }
+// Object { foo: "baz", x: 42, y: 13 }
+```
+
+# Prototype mutation
+
+A property definition of the form __proto__: value or "__proto__": value does not create a property with the name __proto__.  Instead, if the provided value is an object or null, it changes the [[Prototype]] of the created object to that value.  (If the value is not an object or null, the object is not changed.)
+
+*//not sure I understand this bit about prototype manipulation*
 
 The object literal notation is not the same as the JavaScript Object Notation (JSON). Although they look similar, there are differences between them:
 

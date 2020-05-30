@@ -10,3 +10,9 @@ Eduardo Beltran Ortega- Entrepreneur
 Cyrene Domogalla
 Maggie Jareguai - security at Intel
 
+5/29 final presentations
+Dorje Kirsten - astrloger and tea man, did recipes project
+Josh- did project.  glassblower
+Nathaniel Salpeter farm/tech/food sustainability.  sweetfarm.org
+
+*Anna Ridenour suggests https://vx-demo.now.sh/ for using D3 with react*

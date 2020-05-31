@@ -81,7 +81,7 @@ object['age'] // 42
 
 object.foo = 'baz'
 ```
-*// I don't understand how object.foo = 'baz'.*
+*// I don't understand how object.foo = 'baz', because it's being changed?.*
 
 # Property definitions
 

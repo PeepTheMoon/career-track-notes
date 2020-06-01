@@ -1,5 +1,14 @@
 # https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 
+# https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f
+
+
+## What is Destructuring?
+
+Destructuring simply implies breaking down a complex structure into simpler parts. 
+
+With the destructuring syntax, you can extract smaller fragments from arrays and objects. Destructuring syntax can be used for variable declaration or variable assignment. You can also handle nested structures by using nested destructuring syntax.
+
 The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 ```
 let a, b, rest;
@@ -149,6 +158,17 @@ console.log(parseProtocol('https://developer.mozilla.org/en-US/Web/JavaScript'))
 
 *I don't understand this (regex) at all.  Mental note to investigate deeper*
 
+Destructuring in for-of loop in arrays:
+```
+const peeps = [
+    ['guido', 'van rossum', 'python'],
+    ['brendan', 'eich', 'rust'],
+];
+
+for (const [first, middle, lang] of peeps) {
+    console.log('hello ' + first);
+}
+```
 
 ## Object destructuring
 Basic assignment:
@@ -165,3 +185,219 @@ console.log(id); // 42
 console.log(is_verified); // true 
 ```
 
+Assignment without declaration:
+
+A variable can be assigned its value with destructuring separate from its declaration.
+```
+let a, b;
+
+({a, b} = {a: 1, b: 2});
+```
+
+*Notes: The parentheses ( ... ) around the assignment statement are required when using object literal destructuring assignment without a declaration.*
+
+*{a, b} = {a: 1, b: 2} is not valid stand-alone syntax, as the {a, b} on the left-hand side is considered a block and not an object literal.*
+
+*However, ({a, b} = {a: 1, b: 2}) is valid, as is const {a, b} = {a: 1, b: 2}*
+
+*Your ( ... ) expression needs to be preceded by a semicolon or it may be used to execute a function on the previous line.*
+
+
+Assigning to new variable names:
+
+A property can be unpacked from an object and assigned to a variable with a different name than the object property.
+```
+const o = {p: 42, q: true};
+const {p: foo, q: bar} = o;
+ 
+console.log(foo); // 42 
+console.log(bar); // true
+```
+Here, for example, const {p: foo} = o takes from the object o the property named p and assigns it to a local variable named foo.
+
+
+Default values:
+
+A variable can be assigned a default, in the case that the value unpacked from the object is undefined.
+```
+const {a = 10, b = 5} = {a: 3};
+
+console.log(a); // 3
+console.log(b); // 5
+```
+
+
+Assigning to new variables names and providing default values:
+
+A property can be both 1) unpacked from an object and assigned to a variable with a different name and 2) assigned a default value in case the unpacked value is undefined.
+```
+const {a: aa = 10, b: bb = 5} = {a: 3};
+
+console.log(aa); // 3
+console.log(bb); // 5
+```
+
+
+Unpacking fields from objects passed as function parameter:
+```
+const user = {
+  id: 42,
+  displayName: 'jdoe',
+  fullName: {
+    firstName: 'John',
+    lastName: 'Doe'
+  }
+};
+
+function userId({id}) {
+  return id;
+}
+
+function whois({displayName, fullName: {firstName: name}}) {
+  return `${displayName} is ${name}`;
+}
+
+console.log(userId(user)); // 42
+console.log(whois(user));  // "jdoe is John"
+```
+This unpacks the id, displayName and firstName from the user object and prints them.
+
+
+
+Setting a function parameter's default value:
+```
+function drawChart({size = 'big', coords = {x: 0, y: 0}, radius = 25} = {}) {
+  console.log(size, coords, radius);
+  // do some chart drawing
+}
+
+drawChart({
+  coords: {x: 18, y: 30},
+  radius: 30
+});
+```
+
+*In the function signature for drawChart above, the destructured left-hand side is assigned to an empty object literal on the right-hand side: {size = 'big', coords = {x: 0, y: 0}, radius = 25} = {}. You could have also written the function without the right-hand side assignment. However, if you leave out the right-hand side assignment, the function will look for at least one argument to be supplied when invoked, whereas in its current form, you can simply call drawChart() without supplying any parameters. The current design is useful if you want to be able to call the function without supplying any parameters, the other can be useful when you want to ensure an object is passed to the function.*
+
+
+Nested object and array destructuring:
+```
+const metadata = {
+  title: 'Scratchpad',
+  translations: [
+    {
+      locale: 'de',
+      localization_tags: [],
+      last_edit: '2014-04-14T08:43:37',
+      url: '/de/docs/Tools/Scratchpad',
+      title: 'JavaScript-Umgebung'
+    }
+  ],
+  url: '/en-US/docs/Tools/Scratchpad'
+};
+
+let {
+  title: englishTitle, // rename
+  translations: [
+    {
+       title: localeTitle, // rename
+    },
+  ],
+} = metadata;
+
+console.log(englishTitle); // "Scratchpad"
+console.log(localeTitle);  // "JavaScript-Umgebung"
+```
+
+
+For of iteration and destructuring:
+```
+const people = [
+  {
+    name: 'Mike Smith',
+    family: {
+      mother: 'Jane Smith',
+      father: 'Harry Smith',
+      sister: 'Samantha Smith'
+    },
+    age: 35
+  },
+  {
+    name: 'Tom Jones',
+    family: {
+      mother: 'Norah Jones',
+      father: 'Richard Jones',
+      brother: 'Howard Jones'
+    },
+    age: 25
+  }
+];
+
+for (const {name: n, family: {father: f}} of people) {
+  console.log('Name: ' + n + ', Father: ' + f);
+}
+
+// "Name: Mike Smith, Father: Harry Smith"
+// "Name: Tom Jones, Father: Richard Jones"
+```
+
+
+Computed object property names and destructuring:
+
+Computed property names, like on object literals, can be used with destructuring.
+```
+let key = 'z';
+let {[key]: foo} = {z: 'bar'};
+
+console.log(foo); // "bar"
+```
+
+
+Rest in Object Destructuring:
+
+The Rest/Spread Properties for ECMAScript proposal (stage 4) adds the rest syntax to destructuring. Rest properties collect the remaining own enumerable property keys that are not already picked off by the destructuring pattern.
+```
+let {a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40}
+a; // 10 
+b; // 20 
+rest; // { c: 30, d: 40 }
+```
+
+
+Invalid JavaScript identifier as a property name:
+
+Destructuring can be used with property names that are not valid JavaScript identifiers by providing an alternative identifier that is valid.
+```
+const foo = { 'fizz-buzz': true };
+const { 'fizz-buzz': fizzBuzz } = foo;
+
+console.log(fizzBuzz); // "true"
+```
+
+
+Combined Array and Object Destructuring:
+
+Array and Object destructuring can be combined. Say you want the third element in the array props below, and then you want the name property in the object, you can do the following:
+```
+const props = [
+  { id: 1, name: 'Fizz'},
+  { id: 2, name: 'Buzz'},
+  { id: 3, name: 'FizzBuzz'}
+];
+
+const [,, { name }] = props;
+
+console.log(name); // "FizzBuzz"
+```
+
+
+The prototype chain is looked up when the object is deconstructed:
+
+When deconstructing an object, if a property is not accessed in itself, it will continue to look up along the prototype chain.
+```
+let obj = {self: '123'};
+obj.__proto__.prot = '456';
+const {self, prot} = obj;
+// self "123"
+// prot "456"（Access to the prototype chain）
+```

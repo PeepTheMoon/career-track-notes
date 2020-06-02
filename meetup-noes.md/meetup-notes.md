@@ -18,3 +18,4 @@ Nathaniel Salpeter farm/tech/food sustainability.  sweetfarm.org
 *final presentations projects link: https://bit.ly/alchemy052020*
 
 *Anna Ridenour suggests https://vx-demo.now.sh/ for using D3 with react*
+

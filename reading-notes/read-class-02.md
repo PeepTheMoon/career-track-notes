@@ -1,14 +1,34 @@
-Name 3 advantages to Test Driven Development:
+Name 3 advantages to Test Driven Development: 
+1. writing the tests first makes you think more deeply about what you want the code to achieve.
+1. Spend less time debugging
+1. Able to identify errors and problems quickly; fast feedback.  
+https://dzone.com/articles/20-benefits-of-test-driven-development
 
 In what case would you need to use beforeEach() or afterEach() in a test suite?
+When you have setup work that needs to be done before tests run or finishing work that needs to be done after tests run.
 
 What is one downside of Test Driven Development?
+Focusing on the simplest design now and not thinking ahead can mean major refactoring requirements.
+https://leantesting.com/test-driven-development/
 
 What’s the primary difference between ES6 Classes and Constructor/Prototype Classes?
+Comes down to whether ES6 syntax was used or not.  A child of an ES6 class is another type definition which extends the parent with new properties and methods, which in turn can be instantiated at runtime. A child of a prototype is another object instance which delegates to the parent any properties that aren’t implemented on the child.
+https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up
 
-Name a use case for a static method:
+Name a use case for a static method: 
+Use static when you want to provide class level access to a method, i.e. where the method should be callable without an instance of the class. Static methods don't need to be invoked on the object and that is when you use it.
+https://stackoverflow.com/questions/2671496/java-when-to-use-static-methods#:~:text=Use%20static%20when%20you%20want,an%20instance%20of%20the%20class.&text=Static%20methods%20don't%20need,an%20object%20to%20call%20it.
 
 Write an example of a Higher Order function and describe the use case it solves:
+```
+function greaterThan(n) {
+  return m => m > n;
+}
+let greaterThan10 = greaterThan(10);
+console.log(greaterThan10(11));
+// → true
+```
+GreaterThan10() is a equal to the greaterThan function when it takes in the number 10.  It then reuses the logic of the greaterThan function, so that greaterThan10 can see if the number that it is fed is greater thn 10.
 
 # Vocabulary
 

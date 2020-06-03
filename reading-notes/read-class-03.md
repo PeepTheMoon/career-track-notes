@@ -13,7 +13,7 @@ Postgres is a relational database and relies on a scale-up architecture.  MongoD
 Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node. js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
 
 1. Define three related pieces of data in a possible application. An example for a store application might be Product, Category and Department. Describe the constraints and rules on each piece of data and how you would relate these pieces to each other. For example, each Product has a Category and belongs in a Department.
-For a restaurant reviews application, you might have a restaurant listing, a food category, and a location.  Each restaurant has a listing of info (like address), is in a location (like searching for places to go in a neighborhood), has a food category (like thai).
+For a restaurant reviews application, you might have a restaurant listing, a food category, and a location.  Each restaurant has a listing of info about the restaurant itself (like address, website, phone number, menu), is in a location (to allow for searching in a neighborhood or within a certain radius of the user), has a food category (like thai to enable the user to search for all restaurants within a certain area that serve thai food).
 
 ## Vocabulary:
 
@@ -44,7 +44,26 @@ For a restaurant reviews application, you might have a restaurant listing, a foo
 ### Resources:
 
 1. Cloud Databases:
+MLab - remotely hosted mongoDB systems. Easily setup a free database (or pay for more horsepower). Works great with Heroku.  For use on AWS, Azure or Google
+https://www.mlab.com/
+
+Atlas - Cloud based, highly scalable Mongo DB.  Good security, it seems.
+https://www.mongodb.com/cloud/atlas
+
+DynamoDB - AWS NoSQL Database. Very highly scalable. Also provides a ‘mongoose’-like ORM called ‘dynamoose’.    
+https://aws.amazon.com/dynamodb/
+
+CosmosDB - The Microsoft Azure equivalent for Atlas and Dynamo
+https://cosmos.azure.com/
 
 1. Videos:
+https://www.youtube.com/watch?v=ZS_kXvOeQ5Y
+
 
 1. On NoSQL and Mongoose:
+https://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/?utm_source=tuicool
+
+https://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/
+
+https://mongoosejs.com/docs/api.html#Model
+Docs for Mongoose.

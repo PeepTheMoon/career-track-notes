@@ -66,4 +66,4 @@ https://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/?utm_source=tuicool
 https://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/
 
 https://mongoosejs.com/docs/api.html#Model
-Docs for Mongoose.
+Docs for Mongoose. 

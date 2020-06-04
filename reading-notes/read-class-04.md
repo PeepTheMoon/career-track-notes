@@ -65,6 +65,16 @@ You will need to create a new directory called app/lib to store this.  To hve it
 The run this code from the termianl to update the autoload classmap:
 ```composer dump-autoload```
 
+Then in the app/lib folder, make another directory MyApp to keep those things together, and inside that directory, make another directory called Storage to keep the database repositories together, and inside there you will want to separate each resource into its own directory.
+*So our final directory structure is: app/lib/MyApp/Storage/User.*
+
+Then add the repo files to each directory.
+
+Repositories allow you to create a flexible abstraction layer between your database and your Controller. Doing this enables you to separate those concerns and it prevents your Controllers being too tightly coupled with your Database.
+
+Your Controllers don’t care what storage facility you are using to persist data, and so by using Repositories, you are able to make a clean abstraction.
+
+This makes it beautifully simple to switch database types at some point in the future.
 
 
 1. https://www.npmjs.com/package/mongodb-memory-server

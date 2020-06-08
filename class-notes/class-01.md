@@ -19,7 +19,7 @@ One problem with || is that if the value is falsey, like 0, the value will be re
 ?? nullish coalescing operator.  May be more appropriate than ||
 
 
-Functional prgramming is a declarative programming paradigm.  
+Functional programming is a declarative programming paradigm.  
 
 npm init @alchemycodelab/app
 

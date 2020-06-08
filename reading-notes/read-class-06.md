@@ -1,6 +1,30 @@
 # https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
 
+# https://www.youtube.com/watch?v=Q-BpqyOT3a8
+video going over what a REST API is and how it works.  A contract between one piece of software and another.  Stands for Respresentational State Transfer.
 
+# https://restfulapi.net/
+1. Client–server – By separating the user interface concerns from the data storage concerns, we improve the portability of the user interface across multiple platforms and improve scalability by simplifying the server components.
+1. Stateless – Each request from client to server must contain all of the information necessary to understand the request, and cannot take advantage of any stored context on the server. Session state is therefore kept entirely on the client.
+1. Cacheable – Cache constraints require that the data within a response to a request be implicitly or explicitly labeled as cacheable or non-cacheable. If a response is cacheable, then a client cache is given the right to reuse that response data for later, equivalent requests.
+1. Uniform interface – By applying the software engineering principle of generality to the component interface, the overall system architecture is simplified and the visibility of interactions is improved. In order to obtain a uniform interface, multiple architectural constraints are needed to guide the behavior of components. REST is defined by four interface constraints: identification of resources; manipulation of resources through representations; self-descriptive messages; and, hypermedia as the engine of application state.
+1. Layered system – The layered system style allows an architecture to be composed of hierarchical layers by constraining component behavior such that each component cannot “see” beyond the immediate layer with which they are interacting.
+1. Code on demand (optional) – REST allows client functionality to be extended by downloading and executing code in the form of applets or scripts. This simplifies clients by reducing the number of features required to be pre-implemented.
+
+in the REST architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs).
+
+Resources are decoupled from their representation so that their content can be accessed in a variety of formats, such as HTML, XML, plain text, PDF, JPEG, JSON, and others. Metadata about the resource is available and used, for example, to control caching, detect transmission errors, negotiate the appropriate representation format, and perform authentication or access control. And most importantly, every interaction with a resource is stateless.
+
+# https://swagger.io/docs/
+Swagger docs
+
+# https://editor.swagger.io/
+Swagger editor
+
+# https://code-maze.com/the-http-reference/
+HTTP Reference
+
+# https://www.restapitutorial.com/lessons/httpmethods.html
 
 
 # https://tools.ietf.org/html/rfc7231

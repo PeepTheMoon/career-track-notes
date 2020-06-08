@@ -25,6 +25,7 @@ Swagger editor
 HTTP Reference
 
 # https://www.restapitutorial.com/lessons/httpmethods.html
+Using HTTP Methods for RESTful Services
 
 
 # https://tools.ietf.org/html/rfc7231

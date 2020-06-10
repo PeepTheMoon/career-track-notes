@@ -28,6 +28,7 @@ The ref option is what tells Mongoose which model to use during population, in o
 
 
 ## https://scotch.io/tutorials/learn-to-use-the-new-router-in-expressjs-4
+Notes on setting up an express router.  It allows you to create more instances of the Router an applying them accordingly.  Makes for more modular code!
 
 ### https://mongoosejs.com/docs/populate.html#populate-virtuals
 

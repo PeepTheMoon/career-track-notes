@@ -47,4 +47,29 @@ Call the Schema#static() function
   animals = animals.concat(await Animal.findByBreed('Poodle'));
   ```
 
-  
+### https://mongoosejs.com/docs/middleware.html
+
+Mongoose middleware
+
+Middleware (also called pre and post hooks) are functions which are passed control during execution of asynchronous functions. Middleware is specified on the schema level and is useful for writing plugins.
+
+Types of Middleware
+Mongoose has 4 types of middleware: document middleware, model middleware, aggregate middleware, and query middleware.
+
+In document middleware functions, ```this``` refers to the document.
+
+In query middleware functions, ```this``` refers to the query.
+
+Aggregate middleware is for ```MyModel.aggregate()```. Aggregate middleware executes when you call ```exec()``` on an aggregate object. In aggregate middleware, ```this``` refers to the aggregation object.
+
+In model middleware functions, ```this``` refers to the model.
+
+All middleware types support pre and post hooks.
+
+Note: If you specify schema.pre('remove'), Mongoose will register this middleware for doc.remove() by default. If you want to your middleware to run on Query.remove() use schema.pre('remove', { query: true, document: false }, fn).
+
+Pre middleware functions are executed one after another, when each middleware calls ```next```.
+
+In mongoose 5.x, instead of calling ```next()``` manually, you can use a function that returns a promise. In particular, you can use ```async/await```.
+
+In mongoose 5.x, instead of calling next() manually, you can use a function that returns a promise. In particular, you can use async/await.

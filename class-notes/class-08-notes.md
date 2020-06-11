@@ -11,3 +11,4 @@ whenever you have a virtual connection you need to explicitly tell it to include
 
 .toJSON({ virtual: true })
 
+```it.only``` in your test file will run only one test in a file.  ```p``` will allow you to select only one file to tun (with all of the tests in that file)

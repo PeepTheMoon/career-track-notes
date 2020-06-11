@@ -22,9 +22,29 @@ var Animal = mongoose.model('Animal', animalSchema);
   });
   ```
 
-
+The example above uses the Schema.methods object directly to save an instance method. You can also use the Schema.method() helper as described here.
 
 
 ## https://mongoosejs.com/docs/guide.html#statics
 
-Stat
+Statics
+You can also add static functions to your model. There are two equivalent ways to add a static:
+
+Add a function property to schema.statics
+Call the Schema#static() function
+```
+ // Assign a function to the "statics" object of our animalSchema
+  animalSchema.statics.findByName = function(name) {
+    return this.find({ name: new RegExp(name, 'i') });
+  };
+  // Or, equivalently, you can call `animalSchema.static()`.
+  animalSchema.static('findByBreed', function(breed) {
+    return this.find({ breed });
+  });
+
+  const Animal = mongoose.model('Animal', animalSchema);
+  let animals = await Animal.findByName('fido');
+  animals = animals.concat(await Animal.findByBreed('Poodle'));
+  ```
+
+  

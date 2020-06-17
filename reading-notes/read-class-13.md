@@ -40,6 +40,78 @@ The $geoNear pipeline operator takes advantage of a geospatial index. When using
 ## https://www.compose.com/articles/aggregations-in-mongodb-by-example/
 Aggregation examples:
 
+```
+{
+  "id": "1",
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "phoneNumber": "555-555-1212",
+  "city": "Beverly Hills",
+  "state: "CA",
+  "zip": 90210
+  "email": "Jane.Doe@compose.io"
+}
 
+> db.customers.aggregate([ ... aggregation steps go here ...]);
+```
+The aggregate function accepts an array of data transformations which are applied to the data in the order they're defined. This makes aggregation a lot like other data flow pipelines: the transformations that are defined first will be executed first and the result will be used by the next transformation in the sequence.
 
+```
+> db.customers.aggregate([ 
+  { $match: { "zip": 90210 }}
+]);
+```
+to match documents
+```
+> db.customers.aggregate([ 
+  { $match: {"zip": "90210"}}, 
+  { 
+    $group: {
+      _id: null, 
+      count: {
+        $sum: 1
+      }
+    }
+  }
+]);
+```
+to group in a subset after a match
 
+```
+> db.transactions.aggregate([
+  { 
+    $match: {
+      transactionDate: {
+        $gte: ISODate("2017-01-01T00:00:00.000Z"),
+        $lt: ISODate("2017-01-31T23:59:59.000Z")
+      }    
+    }
+  }, {
+    $group: {
+      _id: null,
+      total: {
+        $sum: "$amount"
+      },
+      average_transaction_amount: {
+        $avg: "$amount"
+      },
+      min_transaction_amount: {
+        $min: "$amount"
+      },
+      max_transaction_amount: {
+        $max: "$amount"
+      }
+    }
+  }
+]);
+```
+Our final result gives us an interesting picture of what monthly sales looked like in our fictitious cookie shop:
+```
+{ 
+  _id: null, 
+  total: 20333.00, 
+  average_transaction_amount: 8.50,
+  min_transaction_amount: 2.99,
+  max_transaction_amount: 347.22
+}
+```

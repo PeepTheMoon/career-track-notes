@@ -10,3 +10,5 @@ you have an iat, issued at, and also an can add an exp so that the token doesn't
 
 ```npm i cookie-parser bcryptjs jsonwebtoken```
 
+```npm i cors``` to use cors middleware
+

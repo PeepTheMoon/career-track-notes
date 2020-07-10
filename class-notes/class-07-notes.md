@@ -14,5 +14,5 @@ middleware can be applied to specific paths and also specific routes, AND specif
 
 everything in express is middleware, actually.
 
-npm init @alchemycodelab/app but pick node this time to use the new bootstrap
+```npm init @alchemycodelab/app``` but pick node this time to use the new bootstrap
 

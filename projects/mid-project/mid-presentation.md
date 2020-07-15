@@ -10,7 +10,7 @@ Today I'm going to go over our some of our models and story creation.  This was 
 
 1. To do this I had to consider all of the actions a user may want to take with an object.  It required me to think about what messages to return if a user acted on something in a way that wasn't intended.  
 
-1. We added some span tags to allow us to change the color of interactables in the game.  This allowed us to give hints to the user, and also allowed us to alter the narrative in such a way as to control what the user would interact with first.  For example, in the sci-fi room, if a user interacted with the dome first, it might get confusing as to how to user could enter the dome, so we added those spans to highlight certain interactables and draw the user in that direction first.  
+1. We added some span tags to allow us to change the color of interactables in the game on the front end.  This allowed us to give hints to the user, and also allowed us to alter the narrative in such a way as to control what the user would interact with first.  For example, in the sci-fi room, if a user interacted with the dome right away, it might get confusing as to how to user could enter the dome, so we added those spans to highlight certain interactables and draw the user in that direction first.  
 
 Now I'll hand it off to Melissa who will go over a language processing lexicon they wrote to process the commands the user enters as they move through the game.
 

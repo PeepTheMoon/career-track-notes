@@ -118,3 +118,40 @@ You can define default values for your props by assigning to the special default
 If you are using a Babel transform like transform-class-properties , you can also declare defaultProps as static property within a React component class. This syntax has not yet been finalized though and will require a compilation step to work within a browser. For more information, see the class fields proposal.
 
 The defaultProps will be used to ensure that this.props.name will have a value if it was not specified by the parent component. The propTypes typechecking happens after defaultProps are resolved, so typechecking will also apply to the defaultProps.
+
+# https://jestjs.io/docs/en/snapshot-testing
+
+Snapshot Testing
+Snapshot tests are a very useful tool whenever you want to make sure your UI does not change unexpectedly.
+
+A typical snapshot test case for a mobile app renders a UI component, takes a snapshot, then compares it to a reference snapshot file stored alongside the test. The test will fail if the two snapshots do not match: either the change is unexpected, or the reference snapshot needs to be updated to the new version of the UI component.
+
+Snapshot Testing with Jest
+
+A similar approach can be taken when it comes to testing your React components. Instead of rendering the graphical UI, which would require building the entire app, you can use a test renderer to quickly generate a serializable value for your React tree. Consider this example test for a Link component:
+```
+import React from 'react';
+import Link from '../Link.react';
+import renderer from 'react-test-renderer';
+
+it('renders correctly', () => {
+  const tree = renderer
+    .create(<Link page="http://www.facebook.com">Facebook</Link>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+```
+The first time this test is run, Jest creates a snapshot file that looks like this:
+```
+exports[`renders correctly 1`] = `
+<a
+  className="normal"
+  href="http://www.facebook.com"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Facebook
+</a>
+`;
+```
+The snapshot artifact should be committed alongside code changes, and reviewed as part of your code review process. Jest uses pretty-format to make snapshots human-readable during code review. On subsequent test runs Jest will compare the rendered output with the previous snapshot. If they match, the test will pass. If they don't match, either the test runner found a bug in your code (in this case, it's <Link> component) that should be fixed, or the implementation has changed and the snapshot needs to be updated.

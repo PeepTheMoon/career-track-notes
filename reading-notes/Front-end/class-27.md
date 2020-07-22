@@ -155,3 +155,12 @@ exports[`renders correctly 1`] = `
 `;
 ```
 The snapshot artifact should be committed alongside code changes, and reviewed as part of your code review process. Jest uses pretty-format to make snapshots human-readable during code review. On subsequent test runs Jest will compare the rendered output with the previous snapshot. If they match, the test will pass. If they don't match, either the test runner found a bug in your code (in this case, it's <Link> component) that should be fixed, or the implementation has changed and the snapshot needs to be updated.
+
+use ```jest --updateSnapshot``` to update after intentiaonal changes.
+
+If you'd like to limit which snapshot test cases get re-generated, you can pass an additional ```--testNamePattern``` flag to re-record snapshots only for those tests that match the pattern.
+
+Inline Snapshots
+Inline snapshots behave identically to external snapshots (.snap files), except the snapshot values are written automatically back into the source code. This means you can get the benefits of automatically generated snapshots without having to switch to an external file to make sure the correct value was written.
+
+ ```.toMatchInlineSnapshot()```

@@ -92,8 +92,12 @@ In order to handle side effects react provides the useEffect hook. useEffect tak
 
 containers can also be written as custom hooks rather than compnents.
 
+# https://alchemycodelab.github.io/fsjs-notes/05_react/patterns/container_presentation/presentation-details
+
 Presentation Details
 
 preentation componenets specify how the page looks by creating DOM and styles and are written as functional compnents.  pass props to them to make them reuasble.
 
+
+# https://medium.com/@Zwenza/functional-vs-class-components-in-react-231e3fbd7108
 

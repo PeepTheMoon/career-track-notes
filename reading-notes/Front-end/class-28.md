@@ -75,5 +75,25 @@ presentations : are stateless components that present your data- how things look
 
 # https://alchemycodelab.github.io/fsjs-notes/05_react/patterns/container_presentation/container-details
 
+this.setState to set state inside of a class componenet, merges updated state into a previous state and initiates a rerender
+
+pass a function to this.setState when new state is dependent on previous state, as in a counter.
+
+componentDidMount fetches data that is needed right as the compnent is mounted.
+
+use compnenetDidUpdate when the data that needs to be fetched is based on some kind of user interaction, prop or state change.
+
+To initialize state, use the useState hook.  When using useState, each piece of state should be a javascript primitive (string, number, boolean, null, undefined, or a simple array).  You can use muliple useState hooks in a single component.
+
+Fetching Data
+Fetching data and setting the fetched data in state is considered a side effect. This is because by fetching data we are changing the state of our application.
+
+In order to handle side effects react provides the useEffect hook. useEffect takes two arguments: 1. a function that preforms the side effect; 2. an array of values that, when changed, trigger the side effect.
+
+containers can also be written as custom hooks rather than compnents.
+
+Presentation Details
+
+preentation componenets specify how the page looks by creating DOM and styles and are written as functional compnents.  pass props to them to make them reuasble.
 
 

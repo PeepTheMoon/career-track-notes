@@ -324,3 +324,29 @@ class Welcome extends React.Component {
 }
 ```
 The above two components are equivalent from React’s point of view.
+
+# https://reactjs.org/docs/conditional-rendering.html
+
+Conditional Rendering
+In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application.
+
+As in login and log out button, or a greeting based on a user that's signed in or a guest.
+
+Inline If with Logical && Operator
+You may embed expressions in JSX by wrapping them in curly braces. This includes the JavaScript logical && operator.
+
+Inline If-Else with Conditional Operator
+Another method for conditionally rendering elements inline is to use the JavaScript conditional operator condition ? true : false.
+
+Preventing Component from Rendering
+In rare cases you might want a component to hide itself even though it was rendered by another component. To do this return null instead of its render output.
+
+# https://reactjs.org/docs/handling-events.html
+
+Handling Events
+1. React events are named using camelCase, rather than lowercase.
+1. With JSX you pass a function as the event handler, rather than a string.
+
+Another difference is that you cannot return false to prevent default behavior in React. You must call preventDefault explicitly. 
+
+When using React, you generally don’t need to call addEventListener to add listeners to a DOM element after it is created. Instead, just provide a listener when the element is initially rendered.

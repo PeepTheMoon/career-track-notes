@@ -164,3 +164,21 @@ Inline Snapshots
 Inline snapshots behave identically to external snapshots (.snap files), except the snapshot values are written automatically back into the source code. This means you can get the benefits of automatically generated snapshots without having to switch to an external file to make sure the correct value was written.
 
  ```.toMatchInlineSnapshot()```
+
+ # https://enzymejs.github.io/enzyme/docs/api/shallow.html
+
+ Shallow rendering is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components.
+
+ Good for docs on all of the shallow rendering methods.
+
+ # https://enzymejs.github.io/enzyme/docs/api/render.html
+
+ Use enzyme's render function to generate HTML from your React tree, and analyze the resulting HTML structure.
+
+# https://enzymejs.github.io/enzyme/docs/api/mount.html
+
+Full DOM rendering is ideal for use cases where you have components that may interact with DOM APIs or need to test components that are wrapped in higher order components.
+
+Full DOM rendering requires that a full DOM API be available at the global scope. This means that it must be run in an environment that at least “looks like” a browser environment. If you do not want to run your tests inside of a browser, the recommended approach to using mount is to depend on a library called jsdom which is essentially a headless browser implemented completely in JS.
+
+Note: unlike shallow or static rendering, full rendering actually mounts the component in the DOM, which means that tests can affect each other if they are all using the same DOM. Keep that in mind while writing your tests and, if necessary, use .unmount() or something similar as cleanup.

@@ -23,3 +23,5 @@ to display images in the terminal
 jest --updateSnapshot
 
 If you'd like to limit which snapshot test cases get re-generated, you can pass an additional ```--testNamePattern``` flag to re-record snapshots only for those tests that match the pattern.
+
+npm i react-router-dom

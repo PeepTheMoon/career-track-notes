@@ -121,3 +121,51 @@ Changes are determined by comparing the new and old values using the same algori
 Note
 *The way changes are determined can cause some issues when passing objects as value: see Caveats.*
 
+Class.contextType
+```
+class MyClass extends React.Component {
+  componentDidMount() {
+    let value = this.context;
+    /* perform a side-effect at mount using the value of MyContext */
+  }
+  componentDidUpdate() {
+    let value = this.context;
+    /* ... */
+  }
+  componentWillUnmount() {
+    let value = this.context;
+    /* ... */
+  }
+  render() {
+    let value = this.context;
+    /* render something based on the value of MyContext */
+  }
+}
+```
+MyClass.contextType = MyContext;
+The contextType property on a class can be assigned a Context object created by React.createContext(). This lets you consume the nearest current value of that Context type using this.context. You can reference this in any of the lifecycle methods including the render function.
+
+Note:
+*You can only subscribe to a single context using this API. If you need to read more than one see Consuming Multiple Contexts. If you are using the experimental public class fields syntax, you can use a static class field to initialize your contextType.*
+
+```
+class MyClass extends React.Component {
+  static contextType = MyContext;
+  render() {
+    let value = this.context;
+    /* render something based on the value */
+  }
+}
+```
+Context.Consumer
+```
+<MyContext.Consumer>
+  {value => /* render something based on the context value */}
+</MyContext.Consumer>
+```
+A React component that subscribes to context changes. This lets you subscribe to a context within a function component.
+
+Requires a function as a child. The function receives the current context value and returns a React node. The value argument passed to the function will be equal to the value prop of the closest Provider for this context above in the tree. If there is no Provider for this context above, the value argument will be equal to the defaultValue that was passed to createContext().
+
+Note
+*For more information about the ‘function as a child’ pattern, see render props.*

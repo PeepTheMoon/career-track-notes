@@ -28,4 +28,6 @@ npm i react-router-dom
 
 npm i -D @testing-library/react-hooks
 
+https://medium.com/@ankit.sinhal/mvc-mvp-and-mvvm-design-pattern-6e169567bbad
+
 https://cors-anywhere.herokuapp.com/

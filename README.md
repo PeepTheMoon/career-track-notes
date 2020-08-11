@@ -31,3 +31,22 @@ npm i -D @testing-library/react-hooks
 https://medium.com/@ankit.sinhal/mvc-mvp-and-mvvm-design-pattern-6e169567bbad
 
 https://cors-anywhere.herokuapp.com/
+
+update enzyme snapshots ```npm run test -- -u```
+
+https://sass-lang.com/documentation
+
+https://www.youtube.com/watch?v=Zz6eOVaaelI&feature=youtu.be
+
+```npm i redux```
+
+to see what the browsers' console would display in the node terminal on vscode, use:
+```npx -p @babel/core -p @babel/node babel-node src/store.js```
+
+```npm i react-redux```
+
+google redux dev tools!  for chrome and firefox
+
+add the following to the store in store.js under initialState;
+```window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()```
+from https://github.com/zalmoxisus/redux-devtools-extension

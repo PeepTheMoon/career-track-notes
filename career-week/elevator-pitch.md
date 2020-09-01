@@ -16,13 +16,16 @@ I’m interested in opportunities to develop innovative apps that people will wo
 3. Why you're here
 https://www.youtube.com/watch?v=MmFuWmzeiDs&t=0s
 
+To make the below stronger, bring something about my entrpreneurial spirit, and what I've leanrned as a software developer I will serve you well in your compnay.  Tye it up.
+*I’m Rachel, a full-stack software engineer with a background in critical media studies and nutrition.  I’ve always enjoyed helping others improve their lives.  This led me to found a business on the health-food industry where I focused on nutritional consultations and science-based education in direct consumer marketing.  After 15 years in my company, I wanted to learn new things, be more challenged, and work on more complex problems, so I turned my attention to software engineering.  Through software development, I learned that I derive deep satisfaction from working closely with a diverse group of people on a shared goal, which is why I’m so excited about working at a company like yours.  Would you like have a virtual coffee meeting and discuss the opportunity further?  I’d love to connect on with you LinkedIn!*
 
-*I’m Rachel, a full-stack software engineer with a background in critical media studies and nutrition.  I’ve always enjoyed helping others improve their lives.  This led me to found a business on the health-food industry where I focused on nutritional consultations and science-based education in direct consumer marketing.  After 15 years in my company, I wanted to learn new things, be more challenged, and work on more complex problems, so I turned my attention to software engineering.  Through software development, I learned that I derive deep satisfaction from working closely with others on a shared goal, which is why I’m so excited about working at a company like yours.  Would you like have a virtual coffee meeting and discuss the opportunity further?  I’d love to connect on with you LinkedIn!*
-
+package the below a little bit tighter!  Relate those values to the company I'm interviewing for and it will impress them a lot!  Connect the dots on why you'd make a good hire and make a good developer. 
 
 Tell me about yourself:
-I’m someone who loves information and learning, and this helps me to make connections, find patterns, and reach for creative solutions to problems.  I enjoy thinking  deeply about a topic and seek to generate thought-provoking conversations around an issue or problem.   I get excited by new and interesting ideas and perspectives. 
+I’m someone who loves information and learning, and this helps me to make connections, find patterns, and reach for creative solutions to problems.  I enjoy thinking  deeply about a topic and seek to generate thought-provoking conversations around an issue or problem--  I get excited by new and interesting ideas and perspectives!
+
 Relationship-building is a theme, and I derive deep satisfaction from working closely with others on a shared goal.  I am good at empathizing with  the thoughts, feelings and perspectives of others, and I believe  in nurturing the talents of my teammates.
+
 My core desire is to help improve the lives of others.  It’s a theme that presents itself in my education, my work, and in my volunteerism.  I’m looking for an opportunity to keep learning new things, use technology to improve the lives of others, and to work on teams where ideas are valued, and I can use my creativity, curiosity, 
 On each project I’ve worked on, I have been instrumental in ideation and research.  I help to create a meaningful user experience and approach application design through a UX-focused lens.  I facilitate coordination and communication on teams,  write clean code, and have a strong attention to detail. 
 

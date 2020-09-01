@@ -1,5 +1,7 @@
 JBJ, maybe schedule a call.
 
+INT/FP
+
 -notes from Marcie:
 learn graphql, materialui, make a great personal website and others!  
 Check out awwwards for inspiration.  Works at Ezri, they're hiring!  
@@ -59,9 +61,15 @@ I noticed there were unmet needs in the health food industry, which I had worked
 1. Tell me about a time you worked with a good team, what that felt like, and what your part in it was.
 -I worked on a full-stack stargazing application on a team with 3 other people in a 5 day sprint in a fully remote environment.  I loved working with this team, because we kept ourselves open, flexible, and had a good sense of humor when things didn't work out how we anticipated.  We all took the first day to plan the application, do research, talk about our wire frames, possible features, new libraries we might want to use and why, and write out tickets.  This was my brainchild, and I did a lot of research into APIs we could use to accomplish our goals for the application.  Unfortunately, finding an API that would return the results we needed was extremely difficult.   We had initially planned our app around finding an API of constellations but the closest thing I could find were two graphical simulation planetariums. We chose Virtual Sky for our planetarium and we decided to supplement that data with a weather API which returned astronomical data like sunset, moonrise, moon phase and moon illumination to give the user more data for planning their stargazing excursions.  The result was a really fun, interactive, feature-rich app that had a lot of UX consideration.  It was well-rounded, and the most fun project I've ever worked on.
 
+
+
 ## Commonly asked behavioral questions:
 1. Tell me about a time you had a conflict at work.
-There was a company that I did contracted work for in the scope of my business.  I had worked with this company for many years, but suddenly they stopped paying my invoices.  When I would call or email, they wouldn't be returned.  The outstanding invoice totalled just under 2k, and I relied on that income.  Because I had tried everything in my disposal and was being ignored, I finally filed a professional complaint with the BBB.  They immediately resolved the claim and paid me.
+S- An organic product line for expecting mothers and new babies hired me to do demos and merchandising.  
+T- The company owner, who I was trained and paid by, asked me to check on the testers in each store I visited.
+A- I went through and collected all of the testers that needed to be replaced, and sent in a list of stores and items for them to send out.
+R- The brokerage that managed the line in the territory I worked in called and said they were very upset because I didn't follow protocol.  I explained the situation and what the owner asked me to do, that I wasn't given any protocol by the brokerage for me to follow with regard to testers, and that I sincerely did the best I could with no disrespect.  The sales rep from the brokerage thanked me and explained that she had misunderstood.  We still have a good working relationship between my company and the brokerage, and this became a good opportunity for us to clear up our communication on what we each expected and needed of the other in our work together for the company/line.
+
 
 2. Can you describe a stressful situation and how you handled it?
 
@@ -72,13 +80,26 @@ There was a company that I did contracted work for in the scope of my business. 
 Situation: Starting classes right before the pandemic, no income, large loans, time consuming, cognitively demanding, not getting pua, dealing with a hit and run on my parked vehicle, supporting blm, all while fully remote and quarantined from loved ones.  Task: learn software engineering in a fast-paced environment, with stacked modules (so you never feel comfortable) with absolutely no previous experience.  Action: I devoted myself to the class, participating fully, attending every lecture and improving upon old lab projects until I understood.  I did a lot of informational interviews and got advice through networking, and I put in the time-- sometimes 14 hours per day.  Result: I am in a place where I'm more confident about my abilities, I've learned a lot about myself and what I want from a job, a company, and a team. I adapted to the stresses and I maintained a 98.2% GPA.
 
 5. Have you ever dealt with a sticky situation involving another department?
+
 6. Give me an example of a goal you met.
+
 7. Give me an example of a goal you couldn't meet and how you handled it.
+S- I had been ready for a change in my career, and I thought long and deeply about which direction to turn.  I finally landed on counseling. 
+T- I attended some info sessions and enrolled in some required classes in order to apply for the master's programs.
+A- I attended postgrad classes and took a deep dive into my psyche and my shadow self.  I learned a lot and confronted a lot of family issues.  Afterwards I applied for a couple of different programs, rallied support from past instructors, coworkers and managers, and sent off the paperwork with high hopes.
+R- Sadly, I wasn't accepted into either program.  I value the experience, and learned that I want to use my empathy skills while working with others and accomplishing shared goals.
+
 8. Tell me about a time when you had to placate an unsatisfied client.
+
 9. Have you ever had a disagreement with an immediate supervisor?
+
 10. Describe a time when you went above and beyond.
+A customer at a store I was working at came to my table.  I was sampling out supplements and offering discounts to increase sales for the store.  We discussed the products I was presenting, they tried samples, and asked questions.  I gave them the information they were looking for and were interested in trying the product, but wanted to wait for another time to buy.  I offered them a full-size product from my own car stock as a gift with purchase if they purchased today, and they thought it was such a good deal that they couldn't pass it up.  They purchased the item and I went to get the free item for them, plus some additional samples from the line for them to try, as well as recipes that I use at home with the supplement.  They were very pleased and became regular customers.
+
 11. “Tell me about a time you failed at a task you were assigned…”
+
 12. “Have you ever had to work with someone you didn’t like? How did you handle that?”
+
 13. “How do you handle setting goals? Can you give an example?”
 
 

@@ -88,8 +88,24 @@ Ask devs what sort of tech debt does this project have?
 
 If managers couldn't think of new features and you had a month to work on whatever, what would you choose?
 
-
 If they feel comfortable with you technically and you feel like a teammate, you'll likely be offered the job.
 
+Explore ecosystem:
+- react state management (mobX)
+- react native
 
+front end framework:
+- vue, angular, ember
+- lit html, polymer, webcomponents
 
+javascript everywhere
+- IoT
+
+language
+- python (ML, backend), c#(unity, enterprise), java(enterprise)
+- go(trendy), rust(trendy, what firefox was rewritten in), ruby(meh)
+
+Check out the following newsletters:
+ESNEXT, PonyFoo, React
+
+Contribute to Stack Overflow

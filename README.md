@@ -54,3 +54,4 @@ from https://github.com/zalmoxisus/redux-devtools-extension
 to fix almost all eslint errors ```eslint . --fix ```
 
 git config --global core.ignorecase true
+//to ignore casing changes on file names in github

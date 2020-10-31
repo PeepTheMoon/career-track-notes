@@ -43,3 +43,5 @@ Objects represent “things” with characteristics (aka properties), while arra
 
 article on the difference between the iteration loops: https://bitsofco.de/for-in-vs-for-of/
 
+SET STATE is asynchronous.  you want to ```await.setState``` to keep React from being "behind"
+

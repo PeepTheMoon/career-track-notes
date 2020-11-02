@@ -45,5 +45,27 @@ learning SQL again: to varchar, use text instead.  still testing in jest.
 Small progressive client-side HTTP request library, and Node.js module with the same API, supporting many high-level HTTP client features
 
 node.js:
-a js runtime- 
+a js runtime- the environment that runs the code.  Consists of a compiler that turns human readable javascript into machine readable code.
 
+```create-alchemy-sql-be .```
+In your routes, use only nouns- no actions or verbs!
+Use the plural: /api/students
+Refine the resource as parts are added.
+
+Servers are always used: they supply the front end with HTML, CSS, JS and image files.
+They are request and response.
+GET requests- usually read-only.
+POST requests usually write something to the database
+Back-end handles multiple requests from clients.  Front end sends data back in multiple formats.  
+API usually stands in between front end and database.
+
+console.log in node means you look at the terminal where you launched the server.
+
+Environment variables in the computer, not the code, and are things that may change frequently or things that you don't want to put in github (like secret passwords and API keys).
+
+node.js allows you to run both the front end and the back end.
+
+mobX and Redux/Flux deal with react context.  
+
+```npm init -y``` creates a package.json file
+```npm i express``` a library that lets oyu make endpoints

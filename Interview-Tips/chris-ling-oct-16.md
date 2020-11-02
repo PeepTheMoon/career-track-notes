@@ -76,6 +76,9 @@ Example:
 - create an app that displays image data from an API in a responsive format.
 
 Tip:
-Build muscle memory in practicing deploying "hello world" apps and kow a few siple visualization libraries (chart.js or victory) and quality-of-life libraries (Lodash).
+Build muscle memory in practicing deploying "hello world" apps and kow a few siple visualization libraries (chart.js or victory) and quality-of-life libraries (Lodash) [example flattening arrays, math.min or math.max, .sort  I.e. know how to use methods baked into the code as well as write these type of functions yourself.].
+
+
+Recruiters are usually looking for mid-senior level positions and aren't reliable for first jobs.  Better to increase your network.  The foundation of your network is super important and you will need to rely on those relationships.
 
 

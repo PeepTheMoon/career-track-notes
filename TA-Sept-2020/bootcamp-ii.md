@@ -69,3 +69,18 @@ mobX and Redux/Flux deal with react context.
 
 ```npm init -y``` creates a package.json file
 ```npm i express``` a library that lets oyu make endpoints
+```npm run setup-db```
+
+
+Any time you make a change to the data.js file locally, you will need to rehydrate your database with ```npm run setup-db```
+
+```git remote set-url origin <new repo url>``` to push code from computer to a new repo on github
+
+CRUD Routes:
+Create, Read, Update, Delete
+in SQL= Insert, Select *, update, delete
+in backend/HTTP= /POST, /GET, /PUT, /DELETE
+
+RESTful API is an application architecture for an API that uses HTTP requests to access and use data.  It's the convention of using /GET, /POST, /PUT, /DELETE when we are talking to our SQL database to reading, creating, updating, or deleting data in our database.  
+
+

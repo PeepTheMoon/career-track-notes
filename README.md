@@ -50,3 +50,8 @@ google redux dev tools!  for chrome and firefox
 add the following to the store in store.js under initialState;
 ```window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()```
 from https://github.com/zalmoxisus/redux-devtools-extension
+
+to fix almost all eslint errors ```eslint . --fix ```
+
+git config --global core.ignorecase true
+//to ignore casing changes on file names in github

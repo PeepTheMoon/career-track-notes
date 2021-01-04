@@ -49,3 +49,6 @@ To remove an item from the middle, you change the pointer in front of it to the 
 career track bootstrap:
 ```npm init @alchemycodelab/app@latest```
 
+nodemon -r dotenv/config index.js
+
+local host address for signing into pgadmin 127.0.0.1

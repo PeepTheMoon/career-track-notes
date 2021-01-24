@@ -1,7 +1,11 @@
 {
-  "workbench.colorCustomizations": {
+  "editor.detectIndentation": false,
+"editor.tabSize": 4,
+"editor.formatOnPaste": true,
+"editor.formatOnSave": true,
+"workbench.colorCustomizations": {
     "activityBar.background": "#1B2C53",
     "titleBar.activeBackground": "#253E75",
     "titleBar.activeForeground": "#FBFBFE"
-  }
+}
 }

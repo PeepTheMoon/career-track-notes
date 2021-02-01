@@ -13,3 +13,6 @@ Wants to be able to share this with employers.
 
 https://github.com/alchemycodelab/class-projects/blob/master/BCI-Spring2019.md
 
+Go back to Sept 2019
+
+Docs for migrating mlab to atlas: https://docs.mlab.com/how-to-migrate-sandbox-heroku-addons-to-atlas/

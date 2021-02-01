@@ -36,6 +36,3 @@ using firestore- cloud based option of firebase
 Thinking about the models for the backend
 
 maybe think about a focus group to help navigate decisions about what features people with different disabilities may need/like
-
-
-

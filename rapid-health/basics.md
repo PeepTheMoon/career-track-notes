@@ -55,3 +55,4 @@ authorization roles in google firebase: contributors and users will need differe
 Wants a multisite repo, one is an admin portal and one is a contributor portal.  They will share the same database but be hosted at separate addresses for different users.
 There will be a shared component library- does lerna auto bundle the pieces it needs for each portal when it deploys?
     - ryan says the build command we set up will bundle everything, and put the firebase json at the root
+

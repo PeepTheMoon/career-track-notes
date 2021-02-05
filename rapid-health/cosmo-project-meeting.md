@@ -31,8 +31,18 @@ using a monorepo currently.  Facilitated by yarn and data models for firebase.
 START HERE
 research google firebase and google analytics
 
-using firestore- cloud based option of firebase
+Set up storybook
+
+we plan to use react/redux, set that up
+
+
+using firestore- cloud based option of firebase --
 
 Thinking about the models for the backend
 
-maybe think about a focus group to help navigate decisions about what features people with different disabilities may need/like
+Ryan:
+    there's no front end in firebase
+    cloud firestore will work like mongodb
+    storage will hold the files themselves and the firestore models that have files will ppint to their location in storage.
+
+    

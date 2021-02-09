@@ -43,6 +43,6 @@ Thinking about the models for the backend
 Ryan:
     there's no front end in firebase
     cloud firestore will work like mongodb
-    storage will hold the files themselves and the firestore models that have files will ppint to their location in storage.
+    storage will hold the files themselves and the firestore models that have files will point to their location in storage.
 
     
